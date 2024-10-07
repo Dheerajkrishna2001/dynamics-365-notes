@@ -1,0 +1,30 @@
+Dynamics 365 Notes 1
+
+Model - group of elements.
+
+Package - one or more models.
+
+deployment package - one or more package
+
+When developing a custom functionality, the first thing we should do is create a number sequence.
+
+NumberSeqApplicationModule derivative classes - holds number sequence setup data for specific module.
+
+Number sequence wizard reads these classes.
+
+Create a class which extends the NumberSeqModuleCustomer
+
+and write loadModule_extension() 
+
+
+write a runnable class and run this manually.
+
+
+Organisation administration --> number sequences
+
+<Module>(Account receivable) --> Account receivable parameters --> number sequences.
+
+
+Renaming a Primary key
+
+when a primary key is renamed, all the related records should be renamed which can be done using renamePrimaryKey() method.
