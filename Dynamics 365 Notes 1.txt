@@ -6,6 +6,8 @@ Package - one or more models.
 
 deployment package - one or more package
 
+Number Sequence:
+
 When developing a custom functionality, the first thing we should do is create a number sequence.
 
 NumberSeqApplicationModule derivative classes - holds number sequence setup data for specific module.
@@ -25,6 +27,43 @@ Organisation administration --> number sequences
 <Module>(Account receivable) --> Account receivable parameters --> number sequences.
 
 
-Renaming a Primary key
+Renaming a Primary key:
 
 when a primary key is renamed, all the related records should be renamed which can be done using renamePrimaryKey() method.
+
+
+Document Handling:
+
+allows you to add notes, links, images, files to records in the system.
+
+
+Use normal tables as temporary tables
+
+
+Copying Data:
+
+we can use data() method to copy one record to another (make sure pkey is changed.)
+
+buf2buf() - method in Global class
+
+buf2buf vs data - buf2buf is used across companies, it excludes system fields while copying.
+
+
+Query Objects:
+
+created by drag and drop in AOT,
+used for reports, views , forms
+
+can be created through code too.
+
+Macros in a SQL Statement:
+
+full or partial SQL Queries can be called with various arguments.
+
+Allows you to reuse pieces of x++ SQL queries.
+
+it is defined as partial or full SQL Statements with arguments, so that this macro can be used in other SQL queries passing arguments.
+
+This improves reusability of statements.
+
+
