@@ -66,4 +66,7 @@ it is defined as partial or full SQL Statements with arguments, so that this mac
 
 This improves reusability of statements.
 
+Executing a SQL Query Directly -:
+
+
 
