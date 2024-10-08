@@ -1,0 +1,67 @@
+Working with Forms
+
+
+creating dialogs using RunBase framework:
+
+Dialog can be created by extending RunBase Class.
+
+can declare input fields with DialogField type.
+
+when super method is called, dialog is initialized with relevant controls like "ok" and "cancel" buttons.
+
+pack and unpack methods are mandatory in RunBase - one converts object to container and other container to object.
+
+addField(), addGroup(), addTabPage(), addText(), addImage(), addMenuItemButton() - used to add diff types of controls.
+
+
+value() member method of DialogField is used to access or assign the value in input fields.
+
+when user clicks on "ok" - getFormDialog() method is called.
+
+Handling dialog event
+
+modified() is the method that is called on AOT forms to dynamically change items in the form.
+
+
+allowUpdateOnSelectCtrl() method with true argument is called to enable input control event handling.
+
+dialogSelectCtrl() member method of RunBase class is called every time an input control is modified.
+
+
+Creating Dialogs using the SysOperation framework(Pending.....)
+
+SysOperation framework follows MVC Model
+
+Controller executes the service operations under four diff modes
+
+Modes :
+
+Synchronous - client becomes un responsive, till the job is finished.
+
+Asynchronous - client is still responsive, even after the call is made to server.
+
+Reliable Asynchronous - runs on batch server, deleted once the job is finished.
+
+Scheduled Batch - runs on batch server, not deleted once the job is finished, it runs repeatedly.
+
+Building a dynamic form
+
+addDataSource() - used to add a datasource to a form.
+
+addDesign() - add design and style using design.style(FormStyle::SimpleList)
+
+addControl() - used to add the form controls
+
+
+Adding a Form Splitter:
+
+complex forms consist of more sections, so resizing happens automatically.
+
+Group control properties can be modified to look like splitters.
+
+Using splitters will allow us to resize the 
+
+
+AutoDeclaration
+
+
