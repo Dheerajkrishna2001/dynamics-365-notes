@@ -69,4 +69,18 @@ This improves reusability of statements.
 Executing a SQL Query Directly -:
 
 
+Date Range:
+
+Set ValidTimeStateFieldType to Date.
+
+two new fields will be added - validTo and validFrom.
+
+create an index named EmpIdRegNoIdx
+
+Set Properties :
+
+AlternateKey		Yes
+ValidTimeStateKey	Yes
+ValidTimeStateMode	Yes
+
 
